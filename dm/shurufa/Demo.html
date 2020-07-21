@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="Stylesheet" href="css/virtualkeyboard.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.virtualkeyboard.init();
+            $(".s1").click(function (e) {
+                $.virtualkeyboard.keyboardShowForId("input");
+            });
+
+        });
+
+    </script>
+
+
+</head>
+
+<body style="background-image: url(css/bg.jpg);">
+
+
+    <div style="height: 80px;">
+        <input type="text" id="input" value="" readonly="readonly" />
+        <input type="button" class="s1" value="键盘" />
+    </div>
+    <div style="height: 80px;">
+        <input type="text" id="input2" value="" readonly="readonly" />
+        <input type="button" class="s2" value="键盘" />
+    </div>
+</body>
+
+</html>

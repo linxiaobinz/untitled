@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="./css/pay.css"/>
+    <link rel="stylesheet" href="./shurufa/css/virtualkeyboard.css">
+    <script type="text/javascript" src="./shurufa/jquery.js"></script>
+    <script type="text/javascript">
+        var qiDaoYuArray = ['保佑我的家人身体健康，万事如意！', '阖家平安，身体健康', '诸事顺利', '事业顺利'];
+
+        $(document).ready(function () {
+            $.virtualkeyboard.init()
+            $(".txt1").click(function (e) {
+                $.virtualkeyboard.keyboardShowForId("txtName1")
+            })
+            $(".txt2").click(function (e) {
+                $.virtualkeyboard.keyboardShowForId("txtName2")
+            })
+        })
+        function f() {
+            var elementById = document.getElementById("aHuanYiJu");
+elementById.innerHTML=
+        }
+
+    </script>
+
+</head>
+
+<body>
+<div class="bd clearfix">
+    <div class="left">
+        <div class="item clearfix">
+            <div><img src="imgs/icon-name.png"/></div>
+            <div class="inpt"><input type="text" id="txtName1" class="txt txt1" placeholder="请输入捐赠人名字" maxlength="4"/>
+            </div>
+        </div>
+        <div class="item clearfix">
+            <div><img src="imgs/icon-phone.png"/></div>
+            <div class="inpt"><input type="text" id="txtName2" class="txt txt2" placeholder="请输入联系方式" maxlength="11"/>
+            </div>
+        </div>
+
+        <div class="item clearfix">
+            <div style="padding-top:25px"><img src="imgs/icon-prayer.png"/></div>
+            <div class="inpd" style="padding-bottom:30px">
+                <textarea id="txtQD" class="txt textarea" maxlength="20" readonly="readonly">保佑我的家人身体健康，万事如意！</textarea>
+            </div>
+            <div class="tip">
+             <!-- <span>（16/50）</span> -->
+             <a href="" class="huan" id="aHuanYiJu">换一句</a>
+             </div>
+
+        </div>
+
+    </div>
+    <div class="right">
+        <div class="fo">
+            <form action="">
+                <div class="money"><span>金额100元</span></div>
+                <div class="bt"><button class="tj"></button></div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
