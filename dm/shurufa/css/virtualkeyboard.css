@@ -10,7 +10,7 @@
     background: url(keyboard_bg.png) repeat;
     /*height: 365px;*/ /*中文时候*/
     height: 315px;
-    width: 980px;
+    width: 50%;
     display: none;
     z-index: 2147483647;
 }

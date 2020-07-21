@@ -20,10 +20,14 @@
                 $.virtualkeyboard.keyboardShowForId("txtName2")
             })
         })
-        function f() {
-            var elementById = document.getElementById("aHuanYiJu");
-elementById.innerHTML=
+        window.onload = function () {
+            $("#txtName1").click();
+            $('#txtName1').trigger("click");
         }
+//         function f() {
+//             var elementById = document.getElementById("aHuanYiJu");
+// elementById.innerHTML=
+//         }
 
     </script>
 
