@@ -11981,8 +11981,8 @@
             $(".key_board").show();
             var tmp_left = (document.documentElement.clientWidth - $(".key_board").width()) / 2;
             $(".key_board").css("left", tmp_left < 0 ? 0 : tmp_left);
-            var tmp_top = (document.documentElement.clientHeight - $(".key_board").height())-100;
-            $(".key_board").css("top", tmp_top < 0 ? 0 : tmp_top);
+            // var tmp_top = (document.documentElement.clientHeight - $(".key_board").height())/2;
+            // $(".key_board").css("top", tmp_top < 0 ? 0 : tmp_top);
 
         },
 

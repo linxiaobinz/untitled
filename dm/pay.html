@@ -20,14 +20,22 @@
                 $.virtualkeyboard.keyboardShowForId("txtName2")
             })
         })
+        var txt1 = document.getElementById("txtQD");
         window.onload = function () {
             $("#txtName1").click();
             $('#txtName1').trigger("click");
+         // alert(document.getElementById("txtQD"))
+            alert(txtQD.value)
+// alert(qiDaoYuArray[qiDaoYuArray.length-1])
+//             return false;
         }
-//         function f() {
-//             var elementById = document.getElementById("aHuanYiJu");
-// elementById.innerHTML=
-//         }
+
+        // var bt = document.getElementById("aHuanYiJu");
+function btn() {
+    // $('#txtQD').val(qiDaoYuArray[randomNum(0, qiDaoYuArray.length - 1)]);
+    // alert(qiDaoYuArray[qiDaoYuArray.length-1])
+    txt1.value=qiDaoYuArray[qiDaoYuArray.length-1];
+}
 
     </script>
 
@@ -54,7 +62,7 @@
             </div>
             <div class="tip">
              <!-- <span>（16/50）</span> -->
-             <a href="" class="huan" id="aHuanYiJu">换一句</a>
+             <a href="" class="huan" id="aHuanYiJu" onclick="btn()">换一句</a>
              </div>
 
         </div>
