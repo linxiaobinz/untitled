@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
     <title>Document</title>
+
     <link rel="Stylesheet" href="./css/pay.css"/>
     <link rel="stylesheet" href="./shurufa/css/virtualkeyboard.css">
     <script type="text/javascript" src="./shurufa/jquery.js"></script>
     <script type="text/javascript">
+
         var qiDaoYuArray = ['保佑我的家人身体健康，万事如意！', '阖家平安，身体健康', '诸事顺利', '事业顺利'];
 
         $(document).ready(function () {
@@ -20,28 +23,58 @@
                 $.virtualkeyboard.keyboardShowForId("txtName2")
             })
         })
-        var txt1 = document.getElementById("txtQD");
+        // var elementById = document.getElementById("txtQD");
         window.onload = function () {
+            var elementById = document.getElementById("txtQD");
+
             $("#txtName1").click();
             $('#txtName1').trigger("click");
-         // alert(document.getElementById("txtQD"))
-            alert(txtQD.value)
-// alert(qiDaoYuArray[qiDaoYuArray.length-1])
-//             return false;
-        }
 
-        // var bt = document.getElementById("aHuanYiJu");
+        }
 function btn() {
-    // $('#txtQD').val(qiDaoYuArray[randomNum(0, qiDaoYuArray.length - 1)]);
-    // alert(qiDaoYuArray[qiDaoYuArray.length-1])
-    txt1.value=qiDaoYuArray[qiDaoYuArray.length-1];
+    var elementById = document.getElementById("txtQD");
+    var number = Math.floor((Math.random()*qiDaoYuArray.length));
+         var string = qiDaoYuArray[number];
+   if(elementById.value!=string){
+       elementById.value=string
+// console.log(2)
+   }
+   else {
+       string=qiDaoYuArray[number];
+        btn()
+   };
+
 }
+        function hs() {
+            alert("捐款成功");
+        }
+        window.addEventListener('mousewheel', function (event) {
+            if (event.ctrlKey === true || event.metaKey) {
+                event.preventDefault();
+            }
+        }, {
+            passive: false
+        });
+
+        //firefox
+        window.addEventListener('DOMMouseScroll', function (event) {
+            if (event.ctrlKey === true || event.metaKey) {
+                event.preventDefault();
+            }
+        }, {
+            passive: false
+        });
 
     </script>
+
 
 </head>
 
 <body>
+<div class="head1">
+    <img src="./imgs/中国水墨风国学课程宣传移动端banner@凡科快图%20(1).png">
+
+</div>
 <div class="bd clearfix">
     <div class="left">
         <div class="item clearfix">
@@ -62,7 +95,7 @@ function btn() {
             </div>
             <div class="tip">
              <!-- <span>（16/50）</span> -->
-             <a href="" class="huan" id="aHuanYiJu" onclick="btn()">换一句</a>
+             <a href="#" class="huan" id="aHuanYiJu" onclick="btn()">换一句</a>
              </div>
 
         </div>
@@ -70,9 +103,13 @@ function btn() {
     </div>
     <div class="right">
         <div class="fo">
-            <form action="">
+            <form action="#">
                 <div class="money"><span>金额100元</span></div>
-                <div class="bt"><button class="tj"></button></div>
+                <div class="bt">
+                    <button  class="tj" onclick="hs()">
+
+                    </button>
+                </div>
             </form>
         </div>
     </div>
