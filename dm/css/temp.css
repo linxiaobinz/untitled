@@ -1,0 +1,166 @@
+.info-1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    font-family: 楷体;
+    font-size: 14px;
+    color: saddlebrown;
+
+    /*background: #f2e7ca url(images/templatemo_body.jpg) top center no-repeat;*/
+}
+
+
+
+h1 {
+    margin: 0px auto;
+}
+
+.hd img {
+    width: 100%;
+    height: 200px;
+    /* background-image: url(); */
+}
+
+.hd-1 {
+    float: left;
+    width: 50%;
+    background: url("../imgs/tu.jpg");
+    height: 100%;
+    /* margin: 0 auto; */
+}
+
+
+
+body {
+    /*background: url("../imgs/gz.png") no-repeat;*/
+    background-size: 100%;
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-size: cover;*/
+
+}
+
+#roll {
+    /* background: #F6BF76; */
+    /*border: 1px solid red;*/
+    height: 100%;
+    margin: 0px auto;
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+    box-sizing: border-box;
+    border-top: 2px solid #FFF1AF;
+}
+
+span {
+    float: left;
+    display: inline-block;
+    font-size: 15px;
+    /*width: 40px;*/
+    font-family: 楷体, sans-serif;
+}
+
+i {
+    float: right;
+    display: inline-block;
+    /*width: 40px;*/
+    font-size: 15px;
+    /*margin-top: 200px;*/
+    margin-right: 10px;
+    font-family: 楷体, sans-serif;
+}
+
+#roll li {
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    /* border-bottom: 2px solid orange; */
+    color: red;
+}
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    font-family: '宋体';
+}
+
+.info-1 {
+    margin-left: 10px;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.hd-2 {
+    float: left;
+    width: 35%;
+    background: saddlebrown;
+    height: 100%;
+    position: relative;
+}
+
+
+p {
+    letter-spacing: 2px;
+}
+
+.hd-3 {
+    float: left;
+    width: 15%;
+    background: green;
+    height: 100%;
+}
+
+.bd {
+    width: 99%;
+    /*height:99%;*/
+    /*border: 1px solid rebeccapurple;*/
+    margin: 10px auto;
+    /*border: 5px solid olive;*/
+
+}
+
+.bd-1 {
+    float: left;
+    width: 40%;
+    /*border: 1px solid red;*/
+    height: 845px;
+    /* background: url("./imgs/gdbbj.png"); */
+    overflow: hidden;
+    box-sizing: border-box;
+    /* border: 2px solid #990000; */
+}
+
+.zuo {
+    width: 50%;
+    height: 345px;
+    float: left;
+}
+
+.you {
+    float: left;
+    width: 50%;
+    height: 345px;
+}
+
+.di {
+    /* background-size: 100%; */
+    box-sizing: border-box;
+    /* border: red 1px solid; */
+    /* height: 500px; */
+}
+
+.di img {
+    width: 100%;
+    height: 500px;
+}
+
+.bd-2 {
+    float: left;
+    width: 60%;
+    height: 845px;
+    /*margin-left: 2px;*/
+    box-sizing: border-box;
+    /* border: 2px solid #990000; */
+    /* overflow: hidden; */
+}

@@ -3,8 +3,9 @@
     height: 200px;
 }
 body{
-    background: url('imgs/水墨风古镇旅游海报@凡科快图.png') no-repeat;
+    background: url("../imgs/gz.png") no-repeat;
     background-size: 100%;
+    font-family: 楷体,sans-serif;
 }
 
 
@@ -24,6 +25,21 @@ body{
     width: 50%;
     height: 648px;
 }
+.tip{
+    width: 50%;
+    height: 50px;
+    background: #9e6c34;
+    margin: 0 50px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+a{
+
+text-decoration: none;
+color: black}
 .inpt {
     margin-left: 26px;
     border: 2px solid #9e6c34;

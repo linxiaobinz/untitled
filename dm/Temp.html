@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="./css/defalt.css" rel="stylesheet">
+    <link href="./css/temp.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="hd"><img src="./imgs/gx.png"></div>
+    <div class="bd clearfix">
+
+        <div class="bd-1">
+            <div style="width: 40%;margin: 0 auto;"><img src="./imgs/gdb.png" width="100%" height="100%"
+                    style="margin: 0 auto"></div>
+
+            <ul id="roll">
+                <li><span>曾俊铭</span><i>伍2圆</i></li>
+                <li><span>曾俊铭</span><i>伍3圆</i></li>
+                <li><span>曾俊铭</span><i>伍4圆</i></li>
+                <li><span>曾俊铭</span><i>伍5圆</i></li>
+                <li><span>曾俊铭</span><i>伍6圆</i></li>
+                <li><span>曾俊铭</span><i>伍7圆</i></li>
+                <li><span>曾俊铭</span><i>伍拾圆</i></li>
+                <li><span>曾俊铭</span><i>伍拾圆</i></li>
+                <li><span>曾俊铭</span><i>伍拾圆</i></li>
+
+                <li><span>曾俊铭</span><i>伍拾圆</i></li>
+                <li><span>曾俊铭</span><i>伍拾圆</i></li>
+                <li><span>曾俊铭</span><i>伍拾圆</i></li>
+                <li><span>曾俊铭</span><i>伍2圆</i></li>
+                <li><span>曾俊铭</span><i>伍3圆</i></li>
+                <li><span>曾俊铭</span><i>伍4圆</i></li>
+                <li><span>曾俊铭</span><i>伍5圆</i></li>
+                <li><span>曾俊铭</span><i>伍6圆</i></li>
+                <li><span>曾俊铭</span><i>伍7圆</i></li>
+                <li><span>曾俊铭</span><i>伍拾圆</i></li>
+
+
+            </ul>
+        </div>
+
+        <div class="bd-2">
+            <div class="shang clearfix">
+                <div class="zuo ">
+                    <div class="info-1" id="divSynopsis">
+                        <p class="myp">
+                            <h3>寺庙简介</h3>
+                        </p>
+                        <p>
+                            &nbsp&nbsp梅峰光孝寺位于市区内胜利路中段。因宋时山上遍植梅树，徽宗赐额“梅林佛国”，故称“梅峰寺”。寺的前身原是一座观音亭。宋元丰八年（1085年），地方名士李富之母黄氏舍地百余亩，将亭扩建为寺。绍兴七年（1137年），赐名“报恩光孝寺”。元代在寺内设官讲。明嘉靖四十一年（1562年），倭寇犯莆，寺被焚毁。明万历年间重建。清代增建大小殿宇十多座，傍山而起，错落有致。&nbsp;<br>
+                        </p>
+                        <p></p>
+                    </div>
+
+                </div>
+                <div class="you"><a href=""><img src="imgs/erwei.png" width="100%" height="345"></a></div>
+
+            </div>
+            <div class="di" style="width: 100%">
+                <img src="./imgs/sanzhe.png" width="100%">
+            </div>
+        </div>
+    </div>
+    <div class="ft"></div>
+
+
+</body>
+
+<script type="text/javascript">
+    window.addEventListener('mousewheel', function (event) {
+        if (event.ctrlKey === true || event.metaKey) {
+            event.preventDefault();
+        }
+    }, {
+        passive: false
+    });
+
+    //firefox
+    window.addEventListener('DOMMouseScroll', function (event) {
+        if (event.ctrlKey === true || event.metaKey) {
+            event.preventDefault();
+        }
+    }, {
+        passive: false
+    });
+    (function (A) {
+        function _ROLL(obj) {
+            this.ele = document.getElementById(obj);
+            this.interval = false;
+            this.currentNode = 0;
+            this.passNode = 0;
+            this.speed = 100;
+            this.childs = _childs(this.ele);
+            this.childHeight = parseInt(_style(this.childs[0])['height']);
+            addEvent(this.ele, 'mouseover', function () {
+                window._loveYR.pause();
+            });
+            addEvent(this.ele, 'mouseout', function () {
+                window._loveYR.start(_loveYR.speed);
+            });
+        }
+
+        function _style(obj) {
+            return obj.currentStyle || document.defaultView.getComputedStyle(obj, null);
+        }
+
+        function _childs(obj) {
+            var childs = [];
+            for (var i = 0; i < obj.childNodes.length; i++) {
+                var _this = obj.childNodes[i];
+                if (_this.nodeType === 1) {
+                    childs.push(_this);
+                }
+            }
+            return childs;
+        }
+
+        function addEvent(elem, evt, func) {
+            if (-[1, ]) {
+                elem.addEventListener(evt, func, false);
+            } else {
+                elem.attachEvent('on' + evt, func);
+            };
+        }
+
+        function innerest(elem) {
+            var c = elem;
+            while (c.childNodes.item(0).nodeType == 1) {
+                c = c.childNodes.item(0);
+            }
+            return c;
+        }
+
+        _ROLL.prototype = {
+            start: function (s) {
+                var _this = this;
+                _this.speed = s || 200;
+                _this.interval = setInterval(function () {
+                    _this.ele.scrollTop += 1;
+                    _this.passNode++;
+                    if (_this.passNode % _this.childHeight == 0) {
+                        var o = _this.childs[_this.currentNode] || _this.childs[0];
+                        _this.currentNode < (_this.childs.length - 1) ? _this.currentNode++ : _this
+                            .currentNode = 0;
+                        _this.passNode = 0;
+                        _this.ele.scrollTop = 0;
+                        _this.ele.appendChild(o);
+                    }
+                }, _this.speed);
+            },
+            pause: function () {
+                var _this = this;
+                clearInterval(_this.interval);
+            }
+        }
+        A.marqueen = function (obj) {
+            A._loveYR = new _ROLL(obj);
+            return A._loveYR;
+        }
+    })(window);
+    marqueen('roll').start(25 /*速度默认100*/ );
+</script>
+
+</html>

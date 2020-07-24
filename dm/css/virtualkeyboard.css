@@ -7,7 +7,7 @@
     padding: 20px;
     border-radius: 5px;
     /*background-color:#194B62;*/
-    background: url(keyboard_bg.png) repeat;
+    background: url(../imgs/keyboard_bg.png) repeat;
     /*height: 365px;*/ /*中文时候*/
     height: 315px;
     width:980px;
@@ -21,7 +21,7 @@
     top: 10px;
     height: 12px;
     width: 27px;
-    background: url('keyboard_ico.png') no-repeat;
+    background: url('../imgs/keyboard_ico.png') no-repeat;
 }
 /*清空已输出数据*/
 .keyboard_remove_target {
@@ -49,11 +49,11 @@
     height: 20px;
     width: 20px;
     cursor: pointer;
-    background: url('keyboard_close1.png');
+    background: url('../imgs/keyboard_close1.png');
 }
     /*关闭按钮点击效果*/
     .keyboard_close:active {
-        background: url('keyboard_close2.png');
+        background: url('../imgs/keyboard_close2.png');
     }
 
 /*键盘左边布局*/
