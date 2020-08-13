@@ -3,7 +3,7 @@
     padding: 0;
     line-height: 1.5em;
     font-family: 楷体;
-    font-size: 14px;
+    font-size: 19px;
     color: saddlebrown;
 
     /*background: #f2e7ca url(images/templatemo_body.jpg) top center no-repeat;*/
@@ -24,22 +24,22 @@ h1 {
 .hd-1 {
     float: left;
     width: 50%;
-    background: url("../imgs/tu.jpg");
+    /*background: url("../imgs/tu.jpg");*/
     height: 100%;
     /* margin: 0 auto; */
 }
 
 
 
-body {
+/*body {*/
     /*background: url("../imgs/gz.png") no-repeat;*/
-    background-size: 100%;
-    /*background-position: center center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: fixed;*/
-    /*background-size: cover;*/
+    /*background-size: 100%;*/
+    /*!*background-position: center center;*!*/
+    /*!*background-repeat: no-repeat;*!*/
+    /*!*background-attachment: fixed;*!*/
+    /*!*background-size: cover;*!*/
 
-}
+/*}*/
 
 #roll {
     /* background: #F6BF76; */
@@ -53,7 +53,7 @@ body {
     border-top: 2px solid #FFF1AF;
 }
 
-span {
+.hd-1 span {
     float: left;
     display: inline-block;
     font-size: 15px;
@@ -80,7 +80,7 @@ i {
 }
 
 a {
-    font-size: 12px;
+    /*font-size: 12px;*/
     text-decoration: none;
     font-family: '宋体';
 }
@@ -88,7 +88,7 @@ a {
 .info-1 {
     margin-left: 10px;
     overflow: hidden;
-    max-height: 300px;
+    max-height: 500px;
 }
 
 .hd-2 {
@@ -122,7 +122,7 @@ p {
 
 .bd-1 {
     float: left;
-    width: 40%;
+    width: 25%;
     /*border: 1px solid red;*/
     height: 845px;
     /* background: url("./imgs/gdbbj.png"); */
@@ -132,15 +132,15 @@ p {
 }
 
 .zuo {
-    width: 50%;
-    height: 345px;
+    width: 70%;
+    /*height: 345px;*/
     float: left;
 }
 
 .you {
     float: left;
-    width: 50%;
-    height: 345px;
+    width: 30%;
+    /*height: 345px;*/
 }
 
 .di {
@@ -157,10 +157,153 @@ p {
 
 .bd-2 {
     float: left;
-    width: 60%;
+    width: 75%;
     height: 845px;
     /*margin-left: 2px;*/
     box-sizing: border-box;
     /* border: 2px solid #990000; */
     /* overflow: hidden; */
+}
+
+
+.head1 img{
+    width: 100%;
+    height: 200px;
+}
+body{
+    background: url("../imgs/gz.png") no-repeat;
+    background-size: 100%;
+    font-family: 楷体,sans-serif;
+}
+
+
+.bd{
+    width: 100%;
+    /*height: 388px;*/
+    /*border: 1px solid red;*/
+}
+.left{
+    /*float: left;*/
+    width: 100%;
+    box-sizing: border-box;
+
+    /*border: 1px solid red*/
+}
+.left-in{
+    width: 80%;
+    margin: 0 auto;
+}
+.right{
+    /*float: right;*/
+    /*width: 50%;*/
+    /*height: 648px;*/
+}
+.tip{
+    width: 80%;
+    height: 50px;
+    background: #e0e0e0d6;
+    margin: 0 50px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+a{
+
+    text-decoration: none;
+    color: black}
+.inpt {
+    margin-left: 26px;
+    border: 2px solid #9e6c34;
+    border-radius: 3px;
+    width: 80%;
+    position: relative;
+}
+.item img {
+    margin-top: 10px;
+    width: 18px;
+}
+.inpt .txt {
+    background-color: transparent;
+    margin: 0px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+
+.item div{
+    float: left;
+    margin-top: 20px;
+}
+.inpd .textarea {
+    resize: none;
+    width:100%;
+    height: 100px;
+}
+.inpd{
+    width: 80%;
+}
+.textarea{
+    font-size: 30px;
+
+    margin-left: 26px;
+    border: 2px solid #9e6c34;
+    border-radius: 3px;
+
+}
+.fo{
+    margin: 0 auto;
+    width: 80%;
+}
+button{
+    width: 330px;
+    height:68px;
+    background: url("../imgs/btn-donate.png") no-repeat;
+    border-style: none;
+    /*background: #9e6c34;*/
+    margin: 20px auto;
+}
+form{
+    width: 100%;
+}
+.bt{
+    width: 330px;
+    margin: 0 auto;
+}
+.money{
+    width: 100%;
+    height: 100px;
+    background: #cccccc36;
+    border-style: none;
+    font-size: 50px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 100px;
+    /*margin: 20px auto;*/
+}
+#juankuan{
+    width: 100%;
+    height: 100px;
+    background: #cccccc36;
+    border-style: none;
+    font-size: 50px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 100px;
+}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
